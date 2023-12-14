@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CTW">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="VuePress 2.0.0-rc.0">
+    <style>
+      :root {
+        --c-bg: #fff;
+      }
+      html.dark {
+        --c-bg: #22272e;
+      }
+      html, body {
+        background-color: var(--c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem('vuepress-color-scheme');
+			const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+			if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
+				document.documentElement.classList.toggle('dark', true);
+			}
+    </script>
+    <title>LibreNMS 安裝與使用 | LibreNMS 安裝與使用</title><meta name="description" content="LibreNMS 安裝與使用">
+    <link rel="preload" href="/doc-LibreNMS/assets/style-pBmjJHNx.css" as="style"><link rel="stylesheet" href="/doc-LibreNMS/assets/style-pBmjJHNx.css">
+    <link rel="modulepreload" href="/doc-LibreNMS/assets/app-oXc6wXQu.js"><link rel="modulepreload" href="/doc-LibreNMS/assets/index.html-EwffkpEz.js"><link rel="modulepreload" href="/doc-LibreNMS/assets/index.html-wWBLnvAq.js">
+    <link rel="prefetch" href="/doc-LibreNMS/assets/404.html-xbL3VKZ-.js" as="script"><link rel="prefetch" href="/doc-LibreNMS/assets/404.html-iwbBld8b.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme-container"><!--[--><header class="navbar"><div class="toggle-sidebar-button" title="toggle sidebar" aria-expanded="false" role="button" tabindex="0"><div class="icon" aria-hidden="true"><span></span><span></span><span></span></div></div><span><a aria-current="page" href="/doc-LibreNMS/" class="router-link-active router-link-exact-active"><!----><span class="site-name">LibreNMS 安裝與使用</span></a></span><div class="navbar-items-wrapper" style=""><!--[--><!--]--><!----><!--[--><!--]--><button class="toggle-color-mode-button" title="toggle color mode"><svg style="" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6z" fill="currentColor"></path><path d="M5.394 6.813l1.414-1.415l3.506 3.506L8.9 10.318z" fill="currentColor"></path><path d="M2 15.005h5v2H2z" fill="currentColor"></path><path d="M5.394 25.197L8.9 21.691l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 25.005h2v5h-2z" fill="currentColor"></path><path d="M21.687 23.106l1.414-1.415l3.506 3.506l-1.414 1.414z" fill="currentColor"></path><path d="M25 15.005h5v2h-5z" fill="currentColor"></path><path d="M21.687 8.904l3.506-3.506l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 2.005h2v5h-2z" fill="currentColor"></path></svg><svg style="display:none;" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M13.502 5.414a15.075 15.075 0 0 0 11.594 18.194a11.113 11.113 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1.002 1.002 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.072 13.072 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3z" fill="currentColor"></path></svg></button><!----></div></header><!--]--><div class="sidebar-mask"></div><!--[--><aside class="sidebar"><!----><!--[--><!--]--><ul class="sidebar-items"><!--[--><li><p tabindex="0" class="sidebar-item sidebar-heading">LibreNMS 安裝與使用 <!----></p><ul style="" class="sidebar-item-children"><!--[--><li><a aria-current="page" href="/doc-LibreNMS/#lubuntu-22-04-安裝" class="router-link-active router-link-exact-active sidebar-item" aria-label="Lubuntu 22.04 安裝"><!--[--><!--]--> Lubuntu 22.04 安裝 <!--[--><!--]--></a><ul style="" class="sidebar-item-children"><!--[--><li><a aria-current="page" href="/doc-LibreNMS/#製作-lubuntu-安裝開機-usb" class="router-link-active router-link-exact-active sidebar-item" aria-label="製作 lubuntu 安裝開機 usb"><!--[--><!--]--> 製作 lubuntu 安裝開機 usb <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/doc-LibreNMS/#安裝-lubuntu" class="router-link-active router-link-exact-active sidebar-item" aria-label="安裝 lubuntu"><!--[--><!--]--> 安裝 lubuntu <!--[--><!--]--></a><!----></li><!--]--></ul></li><!--]--></ul></li><!--]--></ul><!--[--><!--]--></aside><!--]--><!--[--><main class="page"><!--[--><!--]--><div class="theme-default-content"><!--[--><!--]--><div><h1 id="librenms-安裝與使用" tabindex="-1"><a class="header-anchor" href="#librenms-安裝與使用" aria-hidden="true">#</a> LibreNMS 安裝與使用</h1><h2 id="lubuntu-22-04-安裝" tabindex="-1"><a class="header-anchor" href="#lubuntu-22-04-安裝" aria-hidden="true">#</a> Lubuntu 22.04 安裝</h2><h3 id="製作-lubuntu-安裝開機-usb" tabindex="-1"><a class="header-anchor" href="#製作-lubuntu-安裝開機-usb" aria-hidden="true">#</a> 製作 lubuntu 安裝開機 usb</h3><ol><li>下載 lubuntu 22.04 iso 檔，使用軟體製作 usb 開機檔</li></ol><p>lubuntu 22.04 https://lubuntu.me/downloads/</p><p>rusuf https://rufus.ie/zh_TW/</p><h3 id="安裝-lubuntu" tabindex="-1"><a class="header-anchor" href="#安裝-lubuntu" aria-hidden="true">#</a> 安裝 lubuntu</h3><p>1.使用 usb 開機，執行第一個選項，就會先以 live cd 的模式進入 lubuntu 作業系統的界面，點選桌面的 install Lubuntu 圖示，就會開始安裝 lubuntu <img src="/doc-LibreNMS/assets/2023-12-12-08-49-03-fmPzxgfn.png" alt="install_lubuntu"></p><p>2.依照安裝指示一直按下一步即可，以下僅顯示需要做選擇或輸入的部份提示 <img src="/doc-LibreNMS/assets/2023-12-12-08-49-52-xBI0p-yV.png" alt=""></p><p><img src="/doc-LibreNMS/assets/2023-12-12-08-50-07-s-3hv5uK.png" alt=""></p><p>安裝完成後，移除 usb 後重新開機</p><p>3.安裝中文輸入法，在終端機（命令列）視窗內， <img src="/doc-LibreNMS/assets/2023-12-12-08-50-31-EKM3eTY5.png" alt=""></p><p>執行以下指令安裝中文輸入法</p><p><code>sudo apt install fcitx5-chewing</code></p><p>備註1： sudo 允許一般用戶以 root 或其他特定帳號執行程式</p><p>備註2： 不使用命令列安裝軟體，從功能表執行「」 <img src="/doc-LibreNMS/assets/2023-12-12-08-51-47-fHYlPtPa.png" alt=""></p><p><img src="/doc-LibreNMS/assets/2023-12-12-08-51-58-D-roG7Bp.png" alt=""></p><p>以下說明將都使用命令列方式安裝，已方便複製、貼上指令</p></div><!--[--><!--]--></div><footer class="page-meta"><!----><div class="meta-item last-updated"><span class="meta-item-label">Last Updated: </span><!----></div><div class="meta-item contributors"><span class="meta-item-label">Contributors: </span><span class="meta-item-info"><!--[--><!--[--><span class="contributor" title="email: loren.tw@gmail.com">Loren Li</span><!----><!--]--><!--]--></span></div></footer><!----><!--[--><!--]--></main><!--]--></div><!----><!--]--></div>
+    <script type="module" src="/doc-LibreNMS/assets/app-oXc6wXQu.js" defer></script>
+  </body>
+</html>
